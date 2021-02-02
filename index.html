@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/mailinglist.php" method="POST"> 
+        <!-- Here we call our function--
+        The action attribute provides the location (URL) of the application or script
+    that will be used to process the form. The action attribute in this example
+    sends the data to a script called mailinglist.php -->
+        
+            <label for="firstlast">Name:</label>
+            <input type="text" name="fullname" id="firstlast" placeholder="First Name"><br>
+             
+            <label for="firstlast">Name:</label><!--For deafult data -->
+            <input type="text" name="fullname" id="firstlast" value="Harekrushna" placeholder="First Name"><br>
+
+            <label for="Max50Length">Name:</label>
+            <input type="text" name="fullname" id="firstlast" maxlength="50" minlength="5" placeholder="First Name"><br>
+
+            <label for="firstlast">Name:</label>
+            <input type="text" name="fullname" id="firstlast" placeholder="First Name"><br>
+
+            <label for="firstlast">Name:</label>
+            <input type="text" name="fullname" id="firstlast" placeholder="First Name"><br>
+
+            <label for="firstlast">Name:</label>
+            <input type="text" name="fullname" id="firstlast" placeholder="First Name"><br>
+
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="firstlast">password:</label>
+            <input type="password" name="password" id="password"  maxlength="12" placeholder="password"><br>
+             
+            <label for="firstlast">search</label>
+            <input type="search" name="search" id="search"  placeholder="search"><br>
+
+            <label for="firstlast">Telephone</label>
+            <input type="tel" name="Telephone" id="Telephone"   placeholder="Telephone"><br>
+
+            <label for="firstlast">URL</label>
+            <input type="url" name="URL" id="URL"  placeholder="URL"><br>
+
+            <label for="firstlast">password:</label>
+            <input type="password" name="password" id="password"   placeholder="password"><br>
+            
+            <br>
+            <hr>
+
+            <!--DROP DOWN : ypu can type also :without scroll menu: when typed particular option will come-->
+            <p>Education completed:<input type="text" list="edulevel" name="education">
+            </p>
+                <datalist id="edulevel">
+                    <option value="High School">
+                    <option value="Bachelors Degree">
+                    <option value="Masters Degree">
+                    <option value="PhD">
+                </datalist>
+            
+
+
+            <p>How old are you?</p>
+                <ol>
+                    <li><input type="radio" name="age" value="under24" checked> under
+                    24</li>
+                    <li><input type="radio" name="age" value="25-34"> 25 to 34</li>
+                    <li><input type="radio" name="age" value="35-44"> 35 to 44</li>
+                    <li><input type="radio" name="age" value="over45"> 45+</li>
+                </ol>
+            <p>What type of music do you listen to?</p>
+                <ul>
+                    <li><input type="checkbox" name="genre" value="punk" checked> Punkrock</li>
+                    <li><input type="checkbox" name="genre" value="indie" checked> Indierock</li>
+                    <li><input type="checkbox" name="genre" value="hiphop"> Hip Hop</li>
+                    <li><input type="checkbox" name="genre" value="rockabilly">Rockabilly</li>
+                </ul>
+            <br>
+
+
+            <p><input type="checkbox" name="OptIn" value="yes"> Yes, send me news and special promotions by email.</p>
+
+            <!-- DROP DOWN WITH SCROLL BAR specify size for scroll-->
+            <p>What is your favorite 80s band?
+                <select name="EightiesFave">
+                <option>The Cure</option>
+                <option>Cocteau Twins</option>
+                <option>Tears for Fears</option>
+                <option>Thompson Twins</option> 
+                <option value="EBTG" >Everything But the Girl</option>
+                <option>Depeche Mode</option>
+                <option>The Smiths</option>
+                <option>New Order</option>
+                </select>
+            </p>
+
+            <p>What 80s bands did you listen to?
+                <select name="EightiesBands" size="6" multiple>
+                <option>The Cure</option>
+                <option>Cocteau Twins</option>
+                <option selected>Tears for Fears</option>
+                <option selected>Thompson Twins</option>
+                <option value="EBTG">Everything But the Girl</option>
+                <option>Depeche Mode</option>
+                <option>The Smiths</option>
+                <option>New Order</option>
+                </select>
+            </p>
+
+            <!-- grouped menu-->
+            <select name="icecream" size="7" multiple>
+                <optgroup label="traditional">
+                    <option>vanilla</option>
+                    <option>chocolate</option>
+                </optgroup>
+                <optgroup label="fancy">
+                    <option>Super praline</option>
+                    <option>Nut surprise</option>
+                    <option>Candy corn</option>
+                </optgroup>
+            </select>
+
+            <input type="hidden" name="success-link" value="http://www.example.com/thankyou.html">
+
+            <br>
+            <hr>
+            Enter Time Details here<br>
+            <input type="time"> <br>
+            <input type="time" name="name" value="19:13:00"><br>
+
+            <input type="date"> <br>
+            <input type="date" name="name" value="2017-01-14"><br>
+
+            <input type="datetime-local"> <br>
+            <input type="datetime-local" name="name" value="2017-01-14T03:13:00"><br>
+
+            <input type="week"><br>
+            <input type="week" name="name" value="2017-W2"><br>
+
+            <input type="month"><br>
+            <input type="month" name="name" value="2017-01"><br>
+
+            <input type="text" placeholder="Enter Harekrushna Name Here">
+
+            <br>
+            <hr>
+
+            <label>Number of guests <input type="number" name="guests" min="1" max="6"></label>
+            <label>Satisfaction (0 to 10) <input type="range" name="satisfaction" min="0" max="10" step="1"></label>
+
+
+            <br>
+            <hr>
+            <label>Your favorite color: <input type="color" name="favorite"></label>
+            <br>
+            <hr>
+            HTML 5 added things <br> 
+            Percent downloaded: <progress max="100" id="fave">0</progress><br>
+            Meter use: <meter min="0" max="100" name="volume">60%</meter>
+            
+            <br>
+            <hr>
+
+            <br>
+            <hr>
+
+            <br>
+            <hr>
+            <br>
+            <hr>
+            <br>
+            <hr>
+            <!--For Multlines data 
+            The rows and cols attributes provide a way to specify the size of the textarea
+with markup. rows specifies the number of lines the text area should display,
+and cols specifies the width in number of characters-->
+            <br>
+            <textarea name="comment" rows="4" cols="45" placeholder="Leave us a comment."></textarea><br>
+
+
+            
+            <input type="reset" value="Reset Everything">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <br><hr>
+    
+    <form action="/client.php" method="POST" enctype="multipart/form-data" >
+        <label>Send a photo to be used as your online icon <em>(optional)
+        </em><br>
+        <input type="file" name="photo"></label>
+    </form>
+
+    <br><hr>
+
+    <h2>Dynamic addition form same page form</h2>
+    <!--Dynamic addition form same page form-->
+    <form onsubmit="return false" oninput="o.value = a.valueAsNumber +b.valueAsNumber">
+        <input name=a type=number step=any>+<input name=b type=number step=any> =
+        <output name=o for="a b"></output>
+    </form>
+    <button type="button" class="btn btn-link">Link</button>
+
+
+
+    
+</body>
+</html>
