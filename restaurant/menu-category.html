@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Restuarant</title>
+</head>
+<body>
+    <header>
+         <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="float-start d-none d-md-block d-lg-block d-xl-block href="index.html"> <!--HIde elements on smalller screen-->
+                        <div id="logo-img" alt="Logo Image"></div>
+                    </a>
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Harekrushna  Restuarant</h1></a>
+                        <p>
+                            <img src="images/star-k-logo.png" alt="HKM Certification">
+                            <span>FSSAI Certified</span>
+                        </p>
+                    </div>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="nav-list">
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="menu-category.html">  
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" fill="currentColor" class="bi bi-menu-down" viewBox="0 0 16 16">
+                                <path d="M7.646.146a.5.5 0 0 1 .708 0L10.207 2H14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3.793L7.646.146zM1 7v3h14V7H1zm14-1V4a1 1 0 0 0-1-1h-3.793a1 1 0 0 1-.707-.293L8 1.207l-1.5 1.5A1 1 0 0 1 5.793 3H2a1 1 0 0 0-1 1v2h14zm0 5H1v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zM2 4.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                            </span><br class="d-none d-sm-block"> Menu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">  
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                            </svg>
+                            </span><br class="d-none d-sm-block"> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="award.html">  
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+                                <path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                            </svg>
+                            </span><br class="d-none d-sm-block"> Award
+                        </a>
+                    </li>
+                    <li id="phone" class="d-none d-md-block"> <!--Only hide for small screen-->
+                        <a href="tel:+91-7504616105">
+                        <span>+91-7504616105</span></a><div>Home Delivery</div>
+                    </li>
+                    </ul>
+                </div>             
+            </div>
+        </nav>  
+    </header>
+
+    <div id="call-btn" class="d-block d-md-none"> <!--Only visible for small screen-->
+        <a class="btn" href="tel:+91-7504616105">
+            <span>+91-7504616105</span>
+        </a>
+        <div id="xs-deliver" class="text-center d-block d-md-none">Home Delivery</div>
+    </div>
+
+    <div id="main-content" class="container">
+        <h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
+        <div class="text-center">
+          Special Menu will be available at 7 PM Everyday.
+        </div>
+        <section class="row">
+            <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+                  <span>Lunch</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+                  <span>Lunch</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+                  <span>Lunch</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+                  <span>Lunch</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+                  <span>Lunch</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+                  <span>Lunch</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+                  <span>Lunch</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+                  <span>Lunch</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+                  <span>Lunch</span>
+                </div>
+              </a>
+            </div>
+          </section>
+
+    </div>
+
+
+    <footer class="panel-footer">
+        <div class="container">
+          <div class="row">
+            <section id="hours" class="col-sm-4">
+              <span>Hours:</span><br>
+              Sun-Thurs: 11:15am - 10:00pm<br>
+              Fri: 11:15am - 2:30pm<br>
+              Saturday Closed
+              <hr class="d-block d-sm-none">
+            </section>
+            <section id="address" class="col-sm-4">
+              <span>Address:</span><br>
+              BMC Bhawani Mall Road<br>
+              Saheed Nagar, Bhubaneswar, 752107
+              <p>* Delivery area within 10km, with minimum order of ₹300 plus ₹30 charge for all deliveries.</p>
+              <hr class="d-block d-sm-none">
+            </section>
+            <section id="testimonials" class="col-sm-4">
+              <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+              <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+            </section>
+          </div>
+          <div class="text-center">&copy; Copyright Harekrushna Maharana 2021</div>
+        </div>
+      </footer>
+    
+
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
